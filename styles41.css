@@ -1,0 +1,36 @@
+body{
+    margin: 50;
+    padding: 300;
+}
+header{
+    background-color: palevioletred;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.sidebar{
+    background-color: blue;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+.sidebar nav ul{
+    list-style-type: none;
+    padding: 20;
+}
+.sidebar nav ul li{
+    margin-bottom: 50px;
+}
+main{
+    margin-left: 250px;
+    padding: 20px;
+    margin-top:80px;
+}
