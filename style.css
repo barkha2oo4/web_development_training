@@ -1,31 +1,39 @@
-*{
-    margin:0px;
-    padding:0px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-.logo{
-    display: flex;
-    justify-content: center;
+body{
+    margin: auto;
+    padding: 0%;
     align-items: center;
+    background-color: black;
+    
 }
-.logo img{
-    width: 84px;
-    height: 31px;
-    margin-top: 15px;
-}
-.logo span{
-    margin-top: 10px;
-    font-size: 14px;
-}
-/*
-The flex property sets the flexible length on flexible items
+.form {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    width: 600px;
+    height:auto;
+    border: 10px solid rgb(77, 77, 82);
+    border-radius: 4px;
+    text-align: center;
+    text-indent: 10px;
+    background-color: white;
 
-The flex container makes it easy to control your elements on bigger and smaller screens.
- */
-.card{
-    width: 296px;
-    height: 240px;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-around
 }
+.form-block{
+    padding: 15px;
+    text-indent: 10px;
+    text-align: center;
+
+}
+input[type=text], input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  h1{
+    color: red;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  

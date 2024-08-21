@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Tables: Styling</title>
+        <style>
+            tr:nth-child(even){
+                background-color: rgb(169, 214, 158);
+            }
+            tr:nth-child(odd){
+                background-color:rgb(144, 188, 224);
+            }
+            tr:nth-child(even) td:nth-child(even){
+                color: red;
+                font-weight: bold;
+            }
+            tr:nth-child(odd) td:nth-child(odd){
+                color: blue;
+                font-style: bold italic;
+            }
+            tr:nth-child(even) td:nth-child(odd){
+                text-decoration: underline;
+            }
+            tr:nth-child(odd) td:nth-child(even){
+                text-decoration: overline;
+            }
+             
+
+        </style>
+    </head>
+    <body>
+        <table> <tr>
+            <td> Row 1, Cell 1</td>
+            <td> Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td> Row 2, Cell 1</td>
+            <td> Row 2, Cell 2</td>
+        </tr>
+        <tr>
+            <td> Row 3, Cell 1</td>
+            <td> Row 3, Cell 2</td>
+        </tr>
+    </table>
+    </body>
+</html>
