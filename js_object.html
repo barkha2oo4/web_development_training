@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object Creation</title>
+</head>
+<body>
+    <h1>Javascript Object Creation</h1>
+    <h2> Object Literal</h2>
+    <script>
+        var personLiteral = {
+            firstName: "Archit",
+            lastName: "Goel",
+            age: 30
+        };
+
+        document.write("Name: "+ personLiteral.firstName + " " + personLiteral.lastName + "<br>");
+        document.write("Age: " + personLiteral.age + "<br>");
+    </script>
+    <h2>Object Instance</h2>
+    <script>
+        var personInstance = new Object();
+        personInstance.firstName ="Akshay";
+        personInstance.lastName = "jain";
+        personInstance.age = 25;
+
+        document.write("Name: " + personInstance.firstName + " " + personInstance.lastName + "<br>" );
+        document.write("Age: " + personInstance.age + "<br>")
+    </script>
+    <h2>Object Constructor:</h2>
+    <script>
+        function Person(firstName, lastName, age){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+        }
+        var personConstructor = new Person("neeraj", "mittal", 35);
+        var personConstructor1 = new Person("Archit", "goel", 34);
+
+        document.write("Name: " + personConstructor.firstName + " " + personConstructor.lastName + "<br>");
+        document.write("Age: " + personConstructor.age + "<br>");
+        document.write("Name: " + personConstructor1.firstName + " " + personConstructor1.lastName + "<br>");
+        document.write("Age: " + personConstructor1.age + "<br>");
+    </script>
+</body>
+</html>

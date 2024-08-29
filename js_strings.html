@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method in ES6</title>
+</head>
+<body>
+    <h1>String Method in ES6</h1>
+    <script>
+        const orignalString = "Hello, world!";
+        document.write(`<p>Original String: "${originalString}"</p>`);
+        document.write(`<p>String Length: "${StringLength}"</p>`);
+        const lowercaseString =orignalString.toLowerCase();
+        document.write(`<p>Lowercase String: "${LowercaseString}"</p>`);
+        const uppercaseString = originalString.toUppercase();
+        document.write(`<p>Upparcase String: "${uppercaseString}"</p>`);
+        const containsSubstring =orignalString.includes("Hello");
+        document.write(`<p>Contains "Hello": ${containsSubstring}</p>`);
+        const indexOfSubstring = originalString.indexOf("World");
+        document.write(`<p> Index of "World": ${indexOfSubstring}</p>`);
+        const substring = originalString.substring(7,12);
+        document.write(`<p>Substring: "${substring}"</p>`);
+        const replacedString = originalString.replace("World","Universe");
+        document.write(`<p>Replaced String: "${replacedString}"</p>`);
+        const splitString = originalString.split(",");
+        document.write(`<p>Split String: ${JSON.stringify(splitString)}</p>`);
+        const stringWithWhitespace = "  Trim Me  ";
+        const trimmedString = stringWithWhitespace.trim();
+        document.write(`<p>Trimmed String: "${trimmedString}"</p>`);
+    </script>
+</body>
+</html>

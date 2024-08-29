@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>OnClick and OnSubmit Events Example</title>
+</head>
+<body>
+    <h1>OnClick and OnSubmit Events Example</h1>
+    <h2>Click the button to change the text:</h2>
+    <p id="clickExample">Click me!</p>
+    <button onclick="changeText()">Click Me</button>
+    <h2>Submit a Form</h2>
+    <form id="myForm" onSubmit="submitForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function changeText(){
+            var clickExample = document.getElementById('clickExample');
+            clickExample.innerHTML ="Button clicked";
+        }
+
+        function submitForm(){
+            var name= document.getElementById("name").value;
+            var email= document.getElementById("email").value;
+            alert("Form submitted with Name: " + name + " and Email: " +email);
+        }
+    </script>
+</body>
+</html>
